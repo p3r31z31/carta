@@ -3,14 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Carta fija y adaptable</title>
+<title>Carta adaptable 100%</title>
 <style>
   html, body {
-    margin: 0; 
-    padding: 0; 
-    overflow: hidden; /* para que no haya scroll */
-    height: 100vh; /* altura total ventana */
-    width: 100vw;
+    margin: 0; padding: 0; 
+    height: 100vh; width: 100vw;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,10 +18,9 @@
 
   .container {
     position: relative;
-    height: 90vh; /* 90% altura de pantalla */
+    height: 90vh;       /* Ajusta altura total que ocupará */
     width: auto;
-    max-width: 90vw;
-    box-sizing: border-box;
+    max-width: 90vw;    /* Ancho máximo */
   }
 
   img {
@@ -34,26 +31,31 @@
 
   .text-overlay {
     position: absolute;
-    top: 5%;
+    top: 8%;
     left: 10%;
     right: 10%;
-    bottom: 5%;
-    overflow-y: auto;
-    font-size: 1.2vh; /* tamaño de texto relativo a la altura pantalla */
-    line-height: 1.3;
+    bottom: 8%;
+    font-size: calc(0.7vh + 0.6vw); /* Tamaño que escala con pantalla */
+    line-height: 1.2;
     background: rgba(255, 255, 255, 0.85);
-    padding: 2vh;
+    padding: 1.5vh 2vw;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
     border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 </style>
 </head>
 <body>
+
   <div class="container">
-    <img src="imagen.jpg" alt="Carta" />
+    <img src="ccimagen.jpg" alt="Carta" />
     <div class="text-overlay">
       Bueno, ya llevamos seis meses, casi siete, en verdad es poco tiempo, pero está lleno de aventuras. Como al principio que quedamos en la calle pq nos daba vergüenza ir a casa, como cuando quedábamos con el caldero pq me daba vergüenza estar solos, cuando no sabíamos de qué hablar, cuando empezamos a quedar en el túnel, cuando te acompañe por primera vez hasta monistrol (y tu madre me vio), cuando nos hicimos fotos con mi prima y fotos con tus padres ese 25 de junio (qué guapa ibas por cierto), cuando conociste a mi abuela, cuando conocí yo a la tuya, como cuando me quede a comer por primera vez en casa de tus abuelos, bueno más que aventuras son momentos bonitos, y como estos podría decirte muchos más. También hemos tenido malos momentos, tampoco me voy a poner a decirlos pq no hace falta. Pero lo que más me gusta es que por más mal que hemos estado siempre lo hemos terminado hablando, aunque nos cueste más o menos, o lloremos más o menos. Aunque no me guste estar mal contigo ni que tú estés mal conmigo, creo que es algo necesario para una relación, y ya sé que nosotros últimamente estamos más mal que bien, pero yo los momentos que estamos bien soy el niño más feliz del mundo. Perdón por reflejar mis inseguridades en nuestra relación, a lo mejor tendría que buscar una forma de quitarme estas inseguridades sin joderte a ti. Te agradezco mucho que aún y tener mis mierdas me sigas aguantando, también te agradezco todo lo que llegas a hacer para que yo esté bien y cuando intentas contarme lo que te pasa, aunque para ti sea muy difícil. Hoy has hecho una cosa que me has dejado dando volteretas, y a lo mejor es una cosa tóxica por mi parte, pero ns me ha gustado mucho. Bueno te estarás preguntando que ha sido esa cosa, ps lo que me ha gustado ha sido que cuando ese amigo del Andreu que no conoces de nada te ha dado like a la historia ps después de un rato lo has bloqueado. Supongo que lo has hecho para que no me dé inseguridad, pero de verdad que me ha gustado que saliera de ti hacerlo. Bueno espero haberte dado esto antes del fin de semana, tipo entonces te lo tengo que dar mañana pq si no no te lo podré dar hasta el fin de semana, y quiero que lo tengas para esos días que no nos podamos ver y estés mal. Gracias por haberte leído esto, yo espero que te haya gustado, pero a lo mejor no se entiende nada pq a mí, aunque no lo parezca a veces, me cuesta mucho expresarme escribiendo. De verdad muchas gracias por ser como eres, te aprecio muchísimo y si algún día tenemos hijos, yo quiero que salgan igualitos que tú, tanto físicamente como mentalmente. Pienso que aunque seamos muy jóvenes, podríamos llegar hasta ser muy viejos. De verdad Daniela que yo voy a intentar no liarla y cuando digo esto me refiero a que voy a intentar que no tengamos malentendidos como alguno que ya hemos tenido, voy a intentar enseñarte y explicarte todo lo que te moleste o te dé inseguridad, y me da igual las veces que te lo tenga que explicar, lo voy a hacer y punto. Y también voy a intentar tener más paciencia cuando te pase algo que no me quieras contar. Gracias por ser como eres y también creo que tengo que estar muy agradecido con tu familia, pq me habéis integrado muy bien en vuestra familia y aunque para otros pueda ser una tontería, para mí es un detalle muy importante, te juro que lo valoro mucho eso. También valoro mucho las veces que me invitáis a comer a casa de tus abuelos, a cenar a casa de tu madre, a dormir a casa de tu madre. De verdad estoy muy contento tanto contigo como con tu familia, y no os quiero perder a ninguno de vosotros, ni tus primos, ni tus abuelos, ni tu gato, ni el mío, ni tus padres, ni tu hermana, ni tus tíos, y sobre todo a quien sí que no quiero perder con diferencia eres tú. Por ser como eres, por escucharme, por cuidarme, por preocuparme de mí, por priorizarme antes que otras cosas, por el tiempo que me dedicas, etc. Te quiero muchísimo T-rex.
     </div>
   </div>
+
 </body>
 </html>
